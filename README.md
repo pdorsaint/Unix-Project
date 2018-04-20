@@ -1,2 +1,4 @@
-## This is a markdown file
-cat -e -t -v makefile
+Title:  Project 1
+Date:  date
+The number of lines this code has 
+      23
