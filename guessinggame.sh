@@ -1,7 +1,7 @@
 #! /bin/bash
 
 function hmfcd {
-echo "How many files are in the current directory?"
+echo "Please guess the number of files in the current directory."
 }
 for number in {1..10}
 do
