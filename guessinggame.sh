@@ -3,7 +3,11 @@
 function output {
 echo "Please guess the number of files in the current directory."
 }
+
+output
+
 for number in {0..10}
+
 do
 if [[ $number -lt 3 ]]
 then
@@ -22,5 +26,4 @@ then
 echo "Congratulations, you are correct!"
 read -r number
 fi
-output
 done
