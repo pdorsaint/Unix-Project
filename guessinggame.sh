@@ -1,23 +1,26 @@
 #! /bin/bash
 
-function hmfcd {
+function output {
 echo "Please guess the number of files in the current directory."
 }
-for number in {1..10}
+for number in {0..10}
 do
-if [[ $numner -lt 3 ]]
+if [[ $number -lt 3 ]]
 then
 echo "Too low, guess again"
-read number
+read -r number
+fi
 
 if [[ $number -gt 5 ]]
-do
+then
 echo "Too high, try again"
-read number
+read -r number
+fi
 
 if [[ $number -eq 4 ]]
-do 
+then
 echo "Congratulations, you are correct!"
-done
-done
+read -r number
+fi
+output
 done
